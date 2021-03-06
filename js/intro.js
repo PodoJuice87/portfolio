@@ -20,14 +20,12 @@ $(document).ready(function() {
           i = 0;
         }
           $(".intro_wrap h1").eq(i).addClass("on");
-        // clearTimeout(delay);
       }else{
         i++;
         if(i > 2){
           i = 2;
         }
         $(".intro_wrap h1").eq(i).addClass("on");
-        // clearTimeout(delay);
       }
     }
     setTimeout(function(){wheelact()},1000);
