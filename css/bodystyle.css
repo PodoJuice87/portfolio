@@ -1,5 +1,5 @@
-/* html{ overflow: hidden; height: 100%; } */
-/* body{ overflow: auto; height: 100%; } */
+/* html{ overflow-y: visible; height: 100%; }
+body{ overflow-y:auto; height: 100%; } */
 
 .video_bg{
   width:100%;
@@ -386,9 +386,13 @@ nav{
 
 
 .con4{
+  margin-top:-100px;
   width:100%;
-  height:750px;
+  overflow:hidden;
+  padding:300px 0;
   position:relative;
+}
+.con4 .title{
 }
 .con4 > img{
   mix-blend-mode:screen;
@@ -408,7 +412,7 @@ nav{
   display:flex;
   justify-content:space-between;
   align-items: center;
-  margin:15px 0; 
+  margin:15px 0;
 }
 .con4 .contact i{
   font-size:20px;
