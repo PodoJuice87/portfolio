@@ -1,42 +1,333 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wonmin, Lee</title>
+    <title>이원민</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image⁄x-icon" href="./img/wm.png">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/bodystyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./font/css/all.css">
+    <!-- NotoSans google Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="./js/intro.js"></script>
+    <script src="./js/intro_1.js"></script>
+    <!-- vanilla tilt -->
+    <script src="./js/vanilla-tilt.min.js"></script>
+    <script src="./js/card_tilt.js"></script>
+    <script src="./js/img_hover.js"></script>
+    <script src="./js/img_modal.js"></script>
+    <script src="./js/parallax.js"></script>
   </head>
   <body>
     <!-- 인트로 -->
+    <div class="gradient_1"></div>
+    <div class="gradient_2"></div>
     <div class="intro_wrap">
-      <div class="gradient_1"></div>
-      <video autoplay muted loop>
-        <source src="./img/color smoke.mp4" type="video/mp4">
-      </video>
-      <h1 class="title1 on">= {<br>"Hello, world!"<br>}</h1>
+      <!-- <video autoplay muted loop>
+        <source src="./img/color smoke_1.mp4" type="video/mp4">
+      </video> -->
+      <h1 class="title1 on">
+        <span>H</span>
+        <span>e</span>
+        <span>l</span>
+        <span>l</span>
+        <span>o</span>
+        <span>,</span>
+        <span>w</span>
+        <span>o</span>
+        <span>r</span>
+        <span>l</span>
+        <span>d</span>
+        <span>!</span>
+      </h1>
       <h1 class="title2">
         <img src="./img/intro1_r.png" alt="상상을 현실로 만들어내는">
         <img src="./img/intro1_g.png" alt="상상을 현실로 만들어내는">
         <img src="./img/intro1_b.png" alt="상상을 현실로 만들어내는">
+        <!-- <img src="./img/intro1_w.png" alt="상상을 현실로 만들어내는"> -->
       </h1>
       <h1 class="title3">
         <span>웹 퍼블리셔</span> 이원민
         <b>제 작품을 소개합니다</b>
+        <div class="btn_start">
+          <div><a href="#">start</a></div>
+        </div>
       </h1>
+      <div class="toTop">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+      <div class="scroll_down">
+        <i class="fas fa-sort-down"></i><br>
+        <i class="fas fa-sort-down"></i>
+      </div>
       <div class="circle_1_pad">
         <div class="circle_1"></div>
         <div class="circle_2"></div>
         <div class="circle_3"></div>
+        <div class="circle_4"></div>
+        <div class="circle_5"></div>
       </div>
-      <div class="gradient_2"></div>
     </div>
     <!-- 컨텐츠 -->
+
+    <!-- Introduce -->
+    <div class="video_bg">
+      <video autoplay muted loop>
+        <source src="./img/Particles - 323.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="con1">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="introTxt">
+        <div class="logoImg">
+          <img src="./img/wm_w.png" alt="WM로고">
+        </div>
+          <p><span>Designer and Publisher from South Korea.</span><br>
+            저는 퍼블리셔가 되기 위해 그린 컴퓨터 아카데미에서 2010.10.27부터 2021.04.02까지 공부하였습니다.<br>UI 디자인과 UX 설계는 물론 디자인 구성요소 설계 및 제작, 응용까지 NCS 교육과정에 맞춰 학습하였고
+            반응형 웹 프로젝트를 진행하며 HTML, CSS, JavaScript를 다루는 기술도 습득하여 지금의 이 페이지를 직접 제작하기까지 만 5개월이라는 길지 않은 시간이지만 많은 노력을 해 왔습니다.
+            항상 가까이 있었지만 어떻게 만들어지고 있는지 궁금하기만 했던 인터넷과 웹에 대한 새로운 지식을 습득하면서 매우 즐거웠고 새롭게 익힌 기술을 적용해 보고 응용해 보면서 보람찬 시간을 보냈습니다.
+            월드와이드웹 기술이 태어나고, 이후 지금까지의 변화를 생각해 보면 앞으로의 웹 개발은 지금까지와는 또 다른 새로운 기술의 시대가 기다리고 있을지도 모른다고 생각합니다. 급변하는 시대의 흐름에 맞춰갈 수 있도록 열린 마음가짐으로 항상 새로운 트렌드와 기술의 발전을 탐구하는 퍼블리셔가 되겠습니다.
+          </p>
+      </div>
+      <div class="stats">
+        <div class="videotext">
+          <video autoplay muted loop>
+            <source src="img/Bokeh - 52129.mp4" type="video/mp4">
+          </video>
+          <h2>WHAT I CAN DO</h2>
+        </div>
+        <div class="card_wrap">
+          <div class="card">
+            <div class="card_title">
+              <h3>Works</h3>
+            </div>
+            <div class="txt_wrap">
+              <span>웹 페이지 기획</span>
+              <span>UI / UX 디자인</span>
+              <span>로고 디자인</span>
+              <span>아이콘 디자인</span>
+              <span>사진 편집 및 합성</span>
+              <span>커머셜 사진 촬영</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_title">
+              <h3>Language</h3>
+            </div>
+            <div class="txt_wrap">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavsScript</span>
+              <span>JQuery</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_title">
+              <h3>And also...</h3>
+            </div>
+            <div class="txt_wrap">
+              <span>사운드 디자인</span>
+              <span>음악 작,편곡</span>
+              <span>믹싱,마스터링</span>
+              <span>영상편집</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_title">
+              <h3>Tools</h3>
+            </div>
+            <div class="txt_wrap">
+              <span>Photoshop</span>
+              <span>Lightroom</span>
+              <span>Illustrator</span>
+              <span>Premiere Pro</span>
+              <span>Studio One</span>
+              <span>Cubase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>퍼블리싱</li>
+          <li>배너,팝업</li>
+          <li>앱 디자인</li>
+          <li>연락처</li>
+        </ul>
+      </nav>
+    </div>
+    <!-- publishing -->
+    <div class="con2">
+      <div class="publishing">
+        <div class="title" id="section_title">
+          <h2>publishing</h2>
+          <p>The main pages of domestic and overseas major companies were selected and<br>published directly using HTML, CSS, and JavaScript.<br>
+            The style and functions of the existing page are reproduced as much as possible,<br>but improved by identifying areas that need improvement.</p>
+          <p>국내외 대기업의 메인페이지를 선정하여 HTML, CSS, JavaScript를 활용하여 직접 퍼블리싱 하였습니다.<br>기존 페이지의 스타일과 기능들을 최대한 최대한 그대로 재현하되, 개선이 필요한 부분을 파악하여 개선하였습니다.</p>
+        </div>
+        <div class="item item_1">
+          <div class="caption">
+            <h3>한국 닌텐도</h3>
+            <h3 id="eng_title">Nintendo Korea</h3>
+            <h4>주목할 점</h4>
+            <p>접속하자마자 눈에 띄는 메인 배너이미지의 슬라이더를 JQuery를 활용하여 구현하였으며,<br>
+              상단 주메뉴의 Drop-Down메뉴 스타일은 CSS transition으로 구현하였습니다.<br>
+              그리고, 주요 컨텐츠인 제품소개 갤러리의 이미지 Hover효과와 버튼 애니메이션도 CSS로 구현하였습니다.</p>
+            <h4>개선사항</h4>
+            <p>전체적으로 큰 Font Size를 알맞게 조정하여 균형감있는 화면을 구성하고,<br>
+              허전해 보일 수 있는 빈 공간에 회사의 슬로건을 추가하여 대외 이미지를 강조하였습니다.</p>
+            <div class="btn_wrap">
+              <div class="reDesign"><a href="#">Redesign Page</a></div>
+              <div class="original"><a href="#">Original Page</a></div>
+            </div>
+          </div>
+          <div class="contents_img">
+            <div class="back_img">
+              <img src="img/nintendo_thumbnail_crop.png" alt="닌텐도 메인페이지 섬네일1">
+            </div>
+            <div class="inner_img" id="para1">
+              <img class="small" src="img/nintendo_02.png" alt="닌텐도 메인페이지 섬네일2">
+            </div>
+          </div>
+
+        </div>
+        <div class="item item_2">
+          <div class="caption">
+            <h3 id="eng_title">DJI KOREA</h3>
+            <h4>주목할 점</h4>
+            <p>상단 메뉴바의 Hover효과 특히 이미지가 교체되고 텍스트의 컬러가 바뀌는 알고리즘을 JQuery를 활용하여 직접 구현하였습니다.<br>
+              또한 주 메뉴의 Layout구성 및 다양한 효과들을 CSS로 구현하였습니다.<br>
+              메인 베너 슬라이더는 BxSlider를 활용하였고 컨텐츠 중반 비디오 배너의 슬라이더는 Swipe를 활용하였습니다.</p>
+            <h4>개선사항</h4>
+            <p>필요 이상으로 큰 아이콘과 텍스트의 크기를 조정해 Balance를 잡고,<br>
+              단순한 스타일의 버튼의 디자인을 통일하여 가독성을 높히고 디자인을 개선하였습니다.</p>
+            <div class="btn_wrap">
+              <div class="reDesign"><a href="#">Redesign Page</a></div>
+              <div class="original"><a href="#">Original Page</a></div>
+            </div>
+          </div>
+          <div class="contents_img">
+            <div class="back_img">
+              <img src="img/dji_thumbnail.png" alt="DJI 메인페이지 섬네일">
+            </div>
+            <div class="inner_img" id="para2">
+              <img class="small" src="img/dji_03.png" alt="닌텐도 메인페이지 섬네일2">
+            </div>
+          </div>
+        </div>
+        <div class="item item_3">
+          <div class="caption">
+            <h3>미에로화이바 (반응형)</h3>
+            <h3 id="eng_title">Miero Fiber (Responsive)</h3>
+            <h4>주목할 점</h4>
+            <p>Media Query를 활용한 반응형 페이지를 PC, Tablet, Mobile 각각 뷰포트에 맞게 제작하였고<br>
+              메인 배너 슬라이더를 JQuery를 활용하여 구현하였습니다.</p>
+            <div class="btn_wrap">
+              <div class="reDesign"><a href="#">Redesign Page</a></div>
+              <div class="original"><a href="#">Original Page</a></div>
+            </div>
+          </div>
+          <div class="contents_img">
+            <div class="back_img">
+              <img src="img/miero.png" alt="미에로화이바 메인페이지 섬네일">
+            </div>
+            <div class="inner_img" id="para3">
+              <img class="small mok" src="img/miero_m2.png" alt="닌텐도 메인페이지 섬네일2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner and Popup Design -->
+    <div class="con3">
+      <div class="title" id="section_title">
+        <h2>Commercial Design</h2>
+        <p>Banners and pop-ups used in commercial homepages are designed assuming various cases.<br>Photo editing and compositing using Photoshop, vector editing and illustration design using Illustrator are possible.</p>
+        <p>상업 홈페이지에서 사용되는 배너와 팝업을 다양한 케이스를 가정하여 디자인 하였습니다.<br>Photoshop을 이용한 사진 편집 및 합성,<br>Illustrator를 이용한 벡터 편집과 일러스트 디자인이 가능합니다.</p>
+      </div>
+      <div class="popup">
+        <div class="slider_wrap">
+          <div class="slide_item" id="p1" style="--i:1;"><a href="#"><img src="img/coronapop.png" alt="corona popup"></a></div>
+          <div class="slide_item" id="p2" style="--i:2;"><a href="#"><img src="img/eventpop.png" alt="christmas popup"></a></div>
+          <div class="slide_item" id="p3" style="--i:3;"><a href="#"><img src="img/freedelipop.png" alt="delivery popup"></a></div>
+          <div class="slide_item" id="p4" style="--i:4;"><a href="#"><img src="img/mongjapop.png" alt="sns event popup"></a></div>
+          <div class="slide_item" id="p5" style="--i:5;"><a href="#"><img src="img/newyearpop.png" alt="new year popup"></a></div>
+          <div class="slide_item" id="p6" style="--i:6;"><a href="#"><img src="img/spring.png" alt="spring popup"></a></div>
+          <div class="slide_item" id="p7" style="--i:7;"><a href="#"><img src="img/thxgivingpop.png" alt="thanks giving day popup"></a></div>
+        </div>
+        <div class="caption" id="p1">
+          <img src="img/coronapop.png" alt="corona popup">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="p2">
+          <img src="img/eventpop.png" alt="christmas popup">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="p3">
+          <img src="img/freedelipop.png" alt="delivery popup">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="p4">
+          <img src="img/mongjapop.png" alt="sns event popup">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="p5">
+          <img src="img/newyearpop.png" alt="new year popup">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="p6">
+          <img src="img/spring.png" alt="spring popup">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="p7">
+          <img src="img/thxgivingpop.png" alt="thanks giving day popup">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="slider_wrap">
+          <div class="slide_item" id="b1" style="--i:1;"><a href="#"><img src="img/krk500.png" alt="krk banner"></a></div>
+          <div class="slide_item" id="b2" style="--i:2;"><a href="#"><img src="img/mall500.png" alt="mall banner"></a></div>
+          <div class="slide_item" id="b3" style="--i:3;"><a href="#"><img src="img/blackfri500.png" alt="blackfriday banner"></a></div>
+          <div class="slide_item" id="b4" style="--i:4;"><a href="#"><img src="img/chirtmas300.png" alt="chirtmas banner"></a></div>
+          <div class="slide_item" id="b5" style="--i:5;"><a href="#"><img src="img/plastic500.png" alt="hospital banner"></a></div>
+        </div>
+        <div class="caption" id="b1">
+          <img src="img/krk500.png" alt="krk banner">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="b2">
+          <img src="img/mall500.png" alt="mall banner">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="b3">
+          <img src="img/blackfri500.png" alt="blackfriday banner">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="b4">
+          <img src="img/chirtmas300.png" alt="chirtmas banner">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="caption" id="b5">
+          <img src="img/plastic500.png" alt="hospital banner">
+          <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="con4">
+      <img src="./img/earth.jpg" alt="지구배경사진" id="para4">
+      <div class="title" id="section_title">
+        <h2>Thanks for<br>Visiting!</h2>
+      </div>
+      <div class="contact">
+        <ul>
+          <li><i class="fas fa-envelope"></i><span><a href="mailto:podojuice87@gmail.com">podojuice87@gmail.com</a></span></li>
+          <li><i class="fas fa-phone-alt"></i><span>+82 10 9238 9249</span></li>
+          <li><i class="fab fa-telegram-plane"></i><span><a href="http://t.me/PodoJuice" target="_blank">@PodoJuice</a></span> </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
