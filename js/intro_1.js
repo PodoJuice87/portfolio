@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(".circle_wrap").addClass("onload");
   var i = 0;
   var state = false; // 현재 스크롤 꺼짐 상태
   var timer;
@@ -50,6 +51,7 @@ $(document).ready(function() {
         }
         i = num;
       }
+
       $("html,body").animate({scrollTop:0},800);
       $(".intro_wrap h1").removeClass("on");
       $(".intro_wrap h1").stop().clearQueue().eq(num).addClass("on");
