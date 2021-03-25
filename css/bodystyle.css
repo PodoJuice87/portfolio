@@ -218,6 +218,9 @@ nav{
   height:80vh;
   cursor:pointer;
 }
+.con2 .publishing .item_4 .contents_img .back_img img{
+  height:600px;
+}
 .con2 .publishing .contents_img .back_img{
   position:relative;
   left:0;
@@ -255,6 +258,10 @@ nav{
 }
 .con2 .publishing .item_3 .contents_img .inner_img img{
   height:320px;
+}
+.con2 .publishing .item_4 .contents_img .inner_img{
+  bottom:20%;
+  transform:scale(3)
 }
 .con2 .publishing .contents_img .small{
   height:auto;
