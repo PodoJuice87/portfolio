@@ -321,9 +321,12 @@ body{
   left:50%;
   margin-left:-500px;
   /* border:1px solid red; */
-  animation:spin1 infinite 12s linear;
+  animation:spin1 infinite 2s linear;
   pointer-events:none;
   z-index:-1;
+}
+.circle_wrap.onload .circle_1_pad{
+  animation:spin1 infinite 12s linear;
 }
 .circle_wrap.onload .circle_1{
   width:5px;
