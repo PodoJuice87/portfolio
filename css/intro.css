@@ -311,6 +311,7 @@ body{
 }
 .circle_wrap.onload{
   background:transparent;
+  z-index:-1;
 }
 .circle_1_pad{
   width:1000px;
