@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  $(".circle_wrap").addClass("onload");
+  setTimeout(function(){
+    $(".circle_wrap").addClass("onload");
+  },3000)
   var i = 0;
   var state = false; // 현재 스크롤 꺼짐 상태
   var timer;
