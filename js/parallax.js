@@ -5,7 +5,8 @@ $(document).ready(function(){
     $("#para1").css("bottom",currentScroll/50-52+"%");
     $("#para2").css("bottom",currentScroll/50-76+"%");
     $("#para3").css("bottom",currentScroll/50-72+"%");
-    var lastimg = currentScroll/50*8-1420;
+    $("#para5").css("bottom",currentScroll/50-150+"%");
+    var lastimg = currentScroll/50*8-1580;
     if (lastimg > 0) {
       lastimg = 0;
     }
