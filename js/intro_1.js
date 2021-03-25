@@ -1,11 +1,10 @@
 $(document).ready(function() {
-  // setTimeout(function(){
-  //   $(".circle_wrap").addClass("onload");
-  // },3000)
-
+  
   const video = document.querySelector('video');
   video.onloadeddata = (event) => {
-    $(".circle_wrap").addClass("onload");
+    setTimeout(function(){
+      $(".circle_wrap").addClass("onload");
+    },1000);
   };
 
   // $("body").imagesLoaded( function(){});
