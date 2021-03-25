@@ -1,7 +1,15 @@
 $(document).ready(function() {
-  setTimeout(function(){
+  // setTimeout(function(){
+  //   $(".circle_wrap").addClass("onload");
+  // },3000)
+
+  const video = document.querySelector('video');
+  video.onloadeddata = (event) => {
     $(".circle_wrap").addClass("onload");
-  },3000)
+  };
+
+  // $("body").imagesLoaded( function(){});
+
   var i = 0;
   var state = false; // 현재 스크롤 꺼짐 상태
   var timer;
@@ -20,12 +28,12 @@ $(document).ready(function() {
         clearTimeout(timer);
         timer = setTimeout(function(){
           intro(i,delta);
-        },100);
+        },200);
       }else{
         clearTimeout(timer);
         timer = setTimeout(function(){
           intro(i,delta);
-        },100);
+        },200);
       }
   });
 
@@ -39,14 +47,14 @@ $(document).ready(function() {
     if(state == false){
       state = true;
       if(delta < 0){
-        console.log("내림");
+        // console.log("내림");
         num++;
         if(num > 2){
           num = 2;
         }
         i = num;
       }else{
-        console.log("올림");
+        // console.log("올림");
         num--;
         if(num < 0){
           num = 0;
@@ -81,7 +89,7 @@ $(document).ready(function() {
   var top = $(window).scrollTop();
   // console.log(top);
   $(".toTop").click(function(){
-    console.log("클릭");
+    // console.log("클릭");
     $("html,body").animate({scrollTop:0},800);
   });
 

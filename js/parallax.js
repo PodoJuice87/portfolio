@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $(window).scroll(function(){
     var currentScroll = ($(window).scrollTop());
-    console.log(currentScroll);
+    // console.log(currentScroll);
     $("#para1").css("bottom",currentScroll/50-52+"%");
     $("#para2").css("bottom",currentScroll/50-76+"%");
     $("#para3").css("bottom",currentScroll/50-72+"%");
