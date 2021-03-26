@@ -197,6 +197,7 @@ nav{
 .con2 .publishing .caption{
   margin-top:20px;
   padding:50px;
+  flex:5;
 }
 .con2 .publishing .caption h3{
   font-family:"GongGothicMedium";
@@ -214,7 +215,7 @@ nav{
   line-height:2;
 }
 .con2 .publishing .contents_img{
-  width:60%;
+  flex:5;
   height:80vh;
   cursor:pointer;
 }

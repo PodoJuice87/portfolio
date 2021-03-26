@@ -335,7 +335,7 @@ body{
   border-radius: 50%;
   position:absolute;
   top:400px;
-  left:-200px;
+  left:100px;
   background:#dbe1ff;
   box-shadow:0px 0px 5px #5086ff,
              0px 0px 10px #5086ff,
@@ -366,7 +366,7 @@ body{
   height:6px;
   border-radius: 50%;
   position:absolute;
-  top:750px;
+  top:850px;
   left:450px;
   background:#fff9c1;
   box-shadow:0px 0px 5px #ffe91a,
@@ -383,7 +383,7 @@ body{
   border-radius: 50%;
   position:absolute;
   top:700px;
-  left:850px;
+  left:250px;
   background:#ffcbba;
   box-shadow:0px 0px 5px #ff470b,
              0px 0px 10px #ff470b,
@@ -399,7 +399,7 @@ body{
   border-radius: 50%;
   position:absolute;
   top:550px;
-  left:150px;
+  left:1050px;
   background:#beffb4;
   box-shadow:0px 0px 5px #22ff00,
              0px 0px 10px #22ff00,
@@ -414,8 +414,8 @@ body{
   height:6px;
   border-radius: 50%;
   position:absolute;
-  top:550px;
-  left:910px;
+  top:250px;
+  left:310px;
   background:#d2fffe;
   box-shadow:0px 0px 5px #34fffa,
              0px 0px 10px #34fffa,
