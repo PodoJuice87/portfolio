@@ -1,14 +1,30 @@
 $(document).ready(function() {
-  
+
+  // 로딩화면
+    // var introTimer = setTimeout(function(){
+    //   $(".circle_wrap").addClass("onload");
+    // },600);
+   // console.log(Pace);
+   // Pace.restart();
+
+
+
   const video = document.querySelector('video');
   video.onloadeddata = (event) => {
     setTimeout(function(){
       $(".circle_wrap").addClass("onload");
-    },1000);
+    },500);
   };
 
-  // $("body").imagesLoaded( function(){});
 
+
+  // $("body").imagesLoaded( function(){
+  //   setTimeout(function(){
+  //     $(".circle_wrap").addClass("onload");
+  //   },1000);
+  // });
+
+  // 인트로 스크롤 이벤트
   var i = 0;
   var state = false; // 현재 스크롤 꺼짐 상태
   var timer;
@@ -82,6 +98,8 @@ $(document).ready(function() {
   //           // to do
   //       }, 1000);
   //   };
+
+
   $(".btn_start").click(function(){
     $("html,body").animate({scrollTop:1000},800);
   });
@@ -93,3 +111,10 @@ $(document).ready(function() {
   });
 
 });
+
+
+// $(window).load(function(){
+//   setTimeout(function(){
+//     $(".circle_wrap").addClass("onload");
+//   },1000);
+// });
