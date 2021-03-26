@@ -1,0 +1,501 @@
+/* 컨테이너너비 : 1140px
+글씨크기 : 14px
+글씨체 : notosanskr
+행간 : 142% */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body{
+  font:14px / 142% 'Noto Sans KR', sans-serif;
+}
+/* ㅇㅋ 굿*/
+
+/* HEADER */
+header{
+  position: relative;
+  z-index:9999;
+}
+header h1{
+  float: left;
+  position: absolute;
+  width:270px;
+  margin-top:40px;
+  margin-left:50px;
+}
+header nav{
+  position: absolute;
+  right:0;
+  margin-top:45px;
+  margin-right:40px;
+}
+header nav ul.gnb > li{
+  float: left;
+  margin:0 20px;
+  padding-bottom:20px;
+  position: relative;
+}
+header nav ul.gnb > li i{
+  font-size:14px;
+  margin-left:3px;
+}
+header nav ul.gnb > li a{
+  font-size:17px;
+  color:#fff;
+}
+header nav ul.gnb > li > a:hover{
+  text-decoration:underline;
+}
+header nav ul.gnb > li ul{
+  display:none;
+  position:absolute;
+  background:#fff;
+  text-align:center;
+  padding:5px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+  margin-top:10px;
+}
+header nav ul.gnb > li ul > li{
+  height:50px;
+  transition:all 0.3s linear 0s;
+}
+header nav ul.gnb > li ul a{
+  color:#000;
+  font-size:15px;
+  line-height:50px;
+}
+header nav ul.gnb > li ul > li:hover{
+  background:#f36f21;
+}
+header nav ul.gnb > li ul > li:hover a{
+  color:#fff;
+}
+header nav ul.gnb > li:hover ul{
+  display:block;
+}
+header nav ul.gnb > li:nth-of-type(1) > ul{
+  width:150px;
+}
+header nav ul.gnb > li:nth-of-type(2) > ul{
+  width:200px;
+}
+header nav ul.gnb > li:nth-of-type(3) > ul{
+  width:120px;
+}
+header nav ul.gnb > li:nth-of-type(4) > ul{
+  width:180px;
+}
+
+/*굿*/
+
+/* 메인베너 */
+.main_banner{
+  position:relative;
+}
+.main_banner .slide img{
+  width:100%;
+}
+.main_banner h2{
+  font-size:60px;
+  color:#fff;
+  font-weight:bold;
+  text-shadow:3px 3px 10px #999;
+  position:absolute;
+  left:50px;
+  top:250px;
+  line-height:1.2;
+}
+.main_banner .sns_link{
+  position:absolute;
+  left:50px;
+  top:420px;
+}
+.main_banner .sns_link li{
+  float:left;
+  border:1px solid #fff;
+  width:30px;
+  height:30px;
+  margin-right:10px;
+  text-align:center;
+}
+.main_banner .sns_link li a{
+  font-size:17px;
+  line-height:30px;
+  color:#fff;
+}
+.main_banner .sns_link li:hover{
+  background:#fff;
+}
+.main_banner .sns_link li:hover a{
+  color:#f36f21;
+}
+.main_banner .sns_link:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.main_banner .slide_controler{
+  width:auto;
+  position:absolute;
+  left:60px;
+  top:560px;
+
+}
+.main_banner .slide_controler a{
+  float:left;
+  display:block;
+  margin:10px;
+  padding-top:4px;
+  background:#fff;
+}
+.main_banner .slide_controler:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.main_banner .slide_bullet{
+  position:absolute;
+  right:60px;
+  top:calc(50% - 60px);
+}
+.main_banner .slide_bullet li{
+  background:#fff;
+  border-radius:50%;
+  margin:20px 0;
+}
+.main_banner .slide_bullet li a{
+  display:block;
+  width:13px;
+  height:13px;
+  overflow:hidden;
+  text-indent:-9999px;
+}
+
+/* 조았어 */
+
+/* 미에로화이바 소식 */
+
+.inner_con{
+  width:1140px;
+  margin:0 auto;
+  padding:110px 0;
+}
+.con1 .inner_con > div{
+  float:left;
+}
+.con1 .inner_con:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.con1 .inner_con .con1_left{
+  width:60%;
+}
+.con1 .inner_con span{
+  font-weight:normal;
+  font-size:17px;
+}
+.con1 .inner_con .con1_left img{
+  display:block;
+  width:300px;
+  margin-bottom:10px;
+}
+.con1 .inner_con .con1_right{
+  width:40%;
+}
+.con1 .inner_con .con1_right b{
+  font-size:43px;
+  font-weight:bold;
+  line-height:1;
+}
+.con1 .inner_con .con1_right .newslist{
+  margin-top:20px;
+}
+.con1 .inner_con .con1_right .newslist li{
+  margin:12px 0;
+}
+.con1 .inner_con .con1_right .newslist li a{
+  color:#666;
+}
+.con1 .inner_con .con1_right .newslist li:before{
+  content:"";
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border:2px solid #f36f21;
+  border-radius:50%;
+  position:relative;
+  top:2px;
+  margin-right:5px;
+}
+
+/* ㅇㅋ */
+
+/* 당신이 몰랐던 식이섬유 */
+
+.con2{
+  background:#f1f1f1;
+}
+.con2 > .inner_con > div{
+  float:left;
+}
+.con2 > .inner_con > figure{
+  float:left;
+}
+.con2 > .inner_con:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.con2 .con2_left{
+  width:50%;
+}
+.con2 .con2_left h3{
+  font-size:43px;
+  font-weight:bold;
+  line-height:1;
+}
+.con2 .con2_left ul{
+  margin:30px 0 30px 15px;
+}
+.con2 .con2_left ul li{
+  float:left;
+  height:50px;
+  margin-right:7px;
+  padding:0 10px;
+}
+.con2 .con2_left ul li:nth-of-type(1){
+  background:#f36f21;
+}
+.con2 .con2_left ul li:nth-of-type(2),.con2 .con2_left ul li:nth-of-type(3){
+  background:#000;
+}
+.con2 .con2_left ul li a{
+  color:#fff;
+  font-size:17px;
+  text-align:center;
+  line-height:50px;
+}
+.con2 .con2_left ul:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.con2 .con2_left h4{
+  font-size:30px;
+  font-weight:bold;
+  margin-left:15px;
+}
+.con2 .con2_left p{
+  margin-left:15px;
+  margin-top:20px;
+  line-height:2;
+  color:#666;
+}
+.con2 .con2_left p:last-of-type{
+  font-size:12px;
+}
+.con2 .con2_right{
+  width:50%;
+}
+.con2 .con2_right{
+  padding-top:80px;
+}
+
+/* ㅇㅋ */
+
+/* Miero Fiber */
+
+.con3{
+  background:#ffc845;
+}
+.con3 h3{
+  font-size:43px;
+  font-weight:bold;
+  line-height:1;
+}
+.con3 ul:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.con3 ul li{
+  float:left;
+  width:350px;
+  padding:0 15px;
+}
+.con3 ul li img{
+}
+.con3 ul li h4{
+  font-size:27px;
+  font-weight:bold;
+}
+.con3 ul li p{
+  border-top:1px solid #888;
+  margin-top:30px;
+  padding-top:17px;
+  color:#666;
+}
+
+/*ㅇㅋ 일단 넘어가 */
+
+/* 미에로걸 스토리 */
+
+.con5{
+  background:#f36f21;
+}
+.con5 h3{
+  font-size:43px;
+  font-weight:bold;
+  line-height:1;
+  color:#fff;
+  margin-bottom:30px;
+}
+.con5 > .inner_con > div{
+  float:left;
+  width:350px;
+}
+.con5 > .inner_con .con5_1{
+  margin-left:15px;
+}
+.con5 > .inner_con .con5_2{
+  margin:0 30px;
+}
+.con5 > .inner_con:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.con5 .slideup{
+  opacity:0;
+  width:100%;
+  height:100px;
+  background:#222;
+  position:absolute;
+  bottom:-90px;
+  box-sizing:border-box;
+  padding:20px;
+  transition:all 0.4s ease 0s;
+}
+
+.con5 li:hover .slideup{
+  bottom:0;
+  opacity:1;
+}
+.con5 .slideup h5{
+  color:#f36f21;
+  font-size:20px;
+}
+.con5 .slideup p{
+  color:#fff;
+  margin-top:20px;
+}
+.con5 .slideup > a{
+  display:block;
+  border:1px solid #fff;
+  width:70px;
+  height:30px;
+  color:#fff;
+  text-align:center;
+  line-height:30px;
+  position:absolute;
+  bottom:30px;
+  right:20px;
+}
+.con5 li{
+  position:relative;
+  margin:30px 0;
+  overflow:hidden;
+}
+
+/* 댔다 */
+
+/* 하단 */
+
+footer .foot_top{
+  background:#2f2f2f;
+}
+footer .foot_top > .inner_con{
+  padding:60px 0;
+  position:relative;
+}
+footer .foot_top .foot_menu > li{
+  float:left;
+  margin-right:70px;
+}
+footer .foot_top .foot_menu > li > a:hover{
+  color:#23527c;
+}
+footer .foot_top .foot_menu > li > a{
+  color:#f36f21;
+  transition:all 0.3s linear 0s;
+}
+footer .foot_top .foot_menu > li ul li{
+  margin:10px 0;
+}
+footer .foot_top .foot_menu > li ul li:hover a{
+  color:#f36f21;
+}
+footer .foot_top .foot_menu > li ul li a{
+  color:#bbb;
+  transition:all 0.3s linear 0s;
+}
+footer .foot_top .foot_menu:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+footer .foot_top .foot_sns{
+  position:absolute;
+  right:0;
+  top:calc(50% - 33px);
+}
+footer .foot_top .foot_sns dt{
+  color:#fff;
+  font-size:18px;
+}
+footer .foot_top .foot_sns dd{
+  float:left;
+  width:25px;
+  height:25px;
+  border:1px solid #fff;
+  margin-right:15px;
+  margin-top:20px;
+  text-align:center;
+  transition:all 0.3s linear 0s;
+}
+footer .foot_top .foot_sns dd:hover{
+  border-color:#f36f21;
+}
+footer .foot_top .foot_sns dd:hover a{
+  color:#f36f21;
+}
+footer .foot_top .foot_sns:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+footer .foot_top .foot_sns dd a{
+  color:#fff;
+  font-size:14px;
+  line-height:25px;
+  transition:all 0.3s linear 0s;
+}
+
+footer .foot_bottom{
+  background:#202020;
+  padding:20px 0;
+  position:relative;
+}
+footer .foot_bottom h1{
+  width:120px;
+  position:relative;
+  left:200px;
+}
+footer .foot_bottom p{
+  color:#666;
+  position:absolute;
+  right:40px;
+  top:calc(50% - 9.5px);
+}
+
+/* 끝 */
