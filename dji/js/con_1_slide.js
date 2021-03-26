@@ -50,15 +50,16 @@ $(document).ready(function() {
       $(".slide_nav_list > li").eq(newIndex+4).addClass("on_after");
       $(".slide_1 > li").eq(newIndex).children(".captions").addClass("on");
     },
-    onSlideAfter:function(){
-      $(".slide_nav_list > li.on_before").click(function(){
-        console.log("이전");
-        slider.goToPrevSlide();
-      });
-      $(".slide_nav_list > li.on_after").click(function(){
-        slider.goToNextSlide();
-      });
-    }
+    
+    // onSlideAfter:function(){
+    //   $(".slide_nav_list > li.on_before").click(function(){
+    //     console.log("이전");
+    //     slider.goToPrevSlide();
+    //   });
+    //   $(".slide_nav_list > li.on_after").click(function(){
+    //     slider.goToNextSlide();
+    //   });
+    // }
 
   });
 
