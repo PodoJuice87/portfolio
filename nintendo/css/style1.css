@@ -1,0 +1,686 @@
+body{
+  font:14px Malgun Gothic,"맑은고딕",sans-serif;
+}
+
+/* HEADER */
+
+header{
+  width:100%;
+  height:75px;
+  position:relative;
+}
+header > h1{
+  width:15%;
+  height:100%;
+  float:left;
+  background-color:#E60012;
+}
+header > h1 > a{
+  height:100%;
+  display:block;
+  overflow:hidden;
+  text-indent:-9999px;
+  background:url("../img/logo_nintendo_red.gif") no-repeat center;
+}
+header .topMenu{
+  height:100%;
+}
+header .topMenu > ul{
+  width:calc(85% - 216px);
+  height:100%;
+  float:left;
+}
+header .topMenu > ul > li{
+  width:calc(100% / 5);
+  height:100%;
+  float:left;
+  border-left:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  box-sizing:border-box;
+}
+header .topMenu > ul > li > a{
+  display:block;
+  width:100%;
+  height:100%;
+  text-align:center;
+  line-height:72px;
+  font-size:15px;
+}
+header .topMenu > ul > li:hover > a{
+  color:#E60012;
+}
+header .topMenu ul > li ul{
+  /* display:none; */
+  width:100%;
+  background:#f7f7f7;
+  border:1px solid #ccc;
+  padding:0px 25px;
+  box-sizing:border-box;
+  transform:scaleY(0);
+  transform-origin:top;
+  transition:all 250ms ease 0s;
+  overflow:hidden;
+  height:0px;
+  position:relative;
+  z-index:1;
+}
+header .topMenu ul > li:hover > ul{
+  transform:scale(1);
+  height:auto;
+  padding-top:15px;
+}
+header .topMenu ul > li ul li{
+  margin:20px 0;
+  font-size:14px;
+}
+header .topMenu ul > li ul li:hover a{
+  color:#E60012;
+}
+
+header .eshop{
+  width:141px;
+  height:100%;
+  position:absolute;
+  top:0;
+  right:75px;
+  background:url("../img/btn_head_eshop.gif") no-repeat center;
+  background-size:90%;
+  background-color:#fe7c0a;
+  overflow:hidden;
+  text-indent:-9999px;
+  border-left:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  box-sizing:border-box;
+}
+header .eshop a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+header .serch{
+  width:75px;
+  height:100%;
+  position:absolute;
+  top:0;
+  right:0;
+  background:url("../img/serch.png") no-repeat center center;
+  background-size:75%;
+  overflow:hidden;
+  text-indent:-9999px;
+  border-left:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  box-sizing:border-box;
+}
+header .serch a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+
+
+/* CONTENTS */
+
+/* SLIDEBANNER */
+.contents{
+  width:100%;
+}
+.contents .slide_banner{
+  width:100%;
+  overflow:hidden;
+}
+.contents .slide_banner .slide_item{
+  width:800%;
+  height:700px;
+  transform:translateX(0);
+  transition:all 0.4s ease 0s;
+}
+.contents .slide_banner .slide_item:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.contents .slide_banner .slide_item li{
+  width:calc(100% / 8);
+  float:left;
+  position:relative;
+}
+.contents .slide_banner .slide_item li img{
+  width:100%;
+}
+.contents .slide_banner .slide_nav{
+  width:180px;
+  margin:0 auto;
+  margin-top:10px;
+}
+.contents .slide_banner .slide_nav:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.contents .slide_banner .slide_nav span{
+  display:inline-block;
+  width:120px;
+  font-size:18px;
+  line-height:24px;
+  text-align:center;
+  font-weight:bold;
+  margin-left:12px;
+  margin-top:2px;
+  left:calc(50% - 60px);
+}
+.contents .slide_banner .slide_nav b{
+  font:inherit;
+}
+.contents .slide_banner .slide_nav .btn_prev{
+  width:16px;
+  height:30px;
+  float:left;
+  background:url("../img/main_slide_btn.png") no-repeat 0 center;
+  background-size:auto 25px;
+}
+.contents .slide_banner .slide_nav .btn_next{
+  width:16px;
+  height:30px;
+  float:right;
+  background:url("../img/main_slide_btn.png") no-repeat 100% center;
+  background-size:auto 25px;
+}
+
+/* NEWS */
+
+.contents .news{
+  width:1200px;
+  margin:50px auto;
+}
+.contents .news h3{
+  position:relative;
+  font-size:14px;
+  color:#4b4b4b;
+}
+.contents .news b{
+  font-size:22px;
+  font-weight:600;
+  color:#000;
+}
+.contents .news b:after{
+  content:"";
+  display:inline-block;
+  width:10px;
+}
+.contents .news h3 > a{
+  position:absolute;
+  right:0;
+  color:#e60012;
+  font-size:17px;
+}
+.contents .news dl{
+  float:left;
+  width:276px;
+  margin:30px 32px 10px 0;
+}
+
+.contents .news dl:nth-of-type(4n){
+  margin-right:0;
+}
+.contents .news:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.contents .news dl .caption{
+  font-weight:bold;
+  font-size:15px;
+  height:70px;
+  margin-bottom:10px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+}
+.contents .news dl .category{
+  font-size:14px;
+  color:#e60012;
+  margin:7px 0;
+}
+.contents .news dl .date{
+  font-size:12px;
+  color:#666;
+}
+.contents .news dl .platform{
+  font-size:12px;
+  color:#666;
+}
+.contents .news dl dt{
+  overflow:hidden;
+}
+.contents .news dl dt img{
+  transform:scale(1);
+  transition:all 0.2s linear 0s;
+}
+.contents .news dl dt:hover img{
+  transform:scale(1.1);
+  opacity:0.8;
+}
+
+/* 중간배너 */
+
+
+.banner2{
+  width:100%;
+  margin:50px 0;
+}
+.banner2 img{
+  width:100%;
+}
+
+
+/* 게임타이틀 */
+
+.contents .gameTitle{
+  width:1200px;
+  margin:50px auto;
+}
+.contents .gameTitle h3{
+  position:relative;
+  font-size:14px;
+  color:#4b4b4b;
+}
+.contents .gameTitle b{
+  font-size:22px;
+  font-weight:600;
+  color:#000;
+}
+.contents .gameTitle b:after{
+  content:"";
+  display:inline-block;
+  width:10px;
+}
+
+
+.contents .gameTitle dl{
+  float:left;
+  width:276px;
+  margin:30px 32px 10px 0;
+  position:relative;
+}
+
+.contents .gameTitle dl:nth-of-type(4n){
+  margin-right:0;
+}
+.contents .gameTitle:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.contents .gameTitle dl .caption{
+  font-weight:bold;
+  font-size:14px;
+  height:70px;
+  margin-bottom:10px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+}
+.contents .gameTitle dl .category{
+  font-size:14px;
+  color:#e60012;
+  margin:7px 0;
+  position:relative;
+}
+.contents .gameTitle dl .date{
+  font-size:12px;
+  color:#666;
+}
+.contents .gameTitle dl .platform{
+  font-size:12px;
+  color:#666;
+}
+.contents .gameTitle dl .package,.contents .gameTitle dl .download{
+  width:25px;
+  height:15px;
+  background:#e60012;
+  font-size:11px;
+  font-weight:bold;
+  color:#fff;
+  text-align:center;
+  line-height:15px;
+  border-radius:3px;
+}
+.contents .gameTitle dl .category div{
+  float:right;
+  margin-left:10px;
+}
+
+.contents .gameTitle dl dt{
+  overflow:hidden;
+}
+.contents .gameTitle dl dt img{
+  transform:scale(1);
+  transition:all 0.2s linear 0s;
+}
+.contents .gameTitle dl dt:hover img{
+  transform:scale(1.1);
+  opacity:0.8;
+}
+.contents .gameTitle dl:after{
+  content:"";
+  display:block;
+  width:60px;
+  height:36px;
+  background:url("../img/ico_lang_foreign_s.png") no-repeat 0 -116px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+/* 미니배너 */
+
+.mini_banner{
+  width:1200px;
+  margin:50px auto;
+}
+.mini_banner ul:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.mini_banner ul li{
+  float:left;
+  margin-right:40px;
+  margin-bottom:40px;
+}
+.mini_banner ul li:nth-of-type(3n){
+  margin-right:0;
+}
+
+/* NOTICE */
+
+.notice{
+  width:1200px;
+  margin:50px auto;
+}
+.notice h4{
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+.notice ul:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.notice ul{
+  border-collapse:collapse;
+}
+.notice ul li{
+  position:relative;
+  float:left;
+  width:33.33%;
+  height:118px;
+  border:1px solid #ccc;
+  border-right:none;
+  box-sizing:border-box;
+  font-size:14px;
+}
+.notice ul li:nth-of-type(1){
+  background:url("../img/unit_icon.png") no-repeat 65px 0;
+}
+.notice ul li:nth-of-type(2){
+  background:url("../img/unit_icon.png") no-repeat 65px -120px;
+}
+.notice ul li:nth-of-type(3){
+  background:url("../img/unit_icon.png") no-repeat 65px -240px;
+}
+.notice ul li a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.notice ul li a span{
+  display:inline-block;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:145px;
+}
+.notice ul li a span:after{
+  content:"";
+  display:inline-block;
+  width:6px;
+  height:10px;
+  background:url("../img/banner_arrow.png") no-repeat 0 0;
+  margin-left:10px;
+}
+
+.notice ul li:last-of-type{
+  border-right:1px solid #ccc;
+}
+.notice dl{
+  position:relative;
+  margin-top:35px;
+  height:70px;
+  border-top:1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding:20px 0;
+}
+.notice dl:after{
+  content:"";
+  display:block;
+  clear: both;
+}
+.notice dl dt{
+  float:left;
+  height:20px;
+  position:absolute;
+  top:calc(50% - 17px);
+  left:100px;
+}
+.notice dl dt a{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin-left:5px;
+  border:1px solid #ccc;
+  background:url("../img/icon_plus.png") no-repeat center center;
+  position:relative;
+  top:5px;
+}
+.notice dl dt img{
+  padding:5px;
+}
+.notice dl dd{
+  float:left;
+  position:absolute;
+  padding-left:15px;
+}
+.notice dl dd:nth-of-type(1){
+  left:350px;
+  top:calc(50% - 10px);
+}
+.notice dl dd:nth-of-type(2){
+  top:calc(50% - 20px);
+  left:780px;
+}
+.notice dl dd:before{
+  content:"";
+  display:inline-block;
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:#E60012;
+  position:absolute;
+  left:0;
+  top:calc(50% - 2px);
+}
+
+
+/* footer */
+
+.ft_logo{
+  background:#E60012;
+  height:100px;
+  margin-bottom:50px;
+}
+.ft_logo .inner_ft_logo{
+  width:1200px;
+  margin: 0 auto;
+  position:relative;
+}
+.ft_logo .inner_ft_logo h2{
+  position:absolute;
+  top:35px;
+}
+.ft_logo .inner_ft_logo > a{
+  display:block;
+  width:22px;
+  height:22px;
+  border-radius:22px;
+  border:2px solid #fff;
+  position:absolute;
+  right:0;
+  top:39px;
+  color:#fff;
+  padding-right:2px;
+  line-height:19px;
+  box-sizing:border-box;
+  overflow:hidden;
+  transition:all 0.2s ease 0s;
+}
+.ft_logo .inner_ft_logo >a span{
+  opacity:0;
+  margin-left:6px;
+  font-size:14px;
+  font-weight:bold;
+  position:absolute;
+  left:1px;
+  bottom:0;
+}
+.ft_logo .inner_ft_logo > a i{
+  position:absolute;
+  right:2px;
+  top:1px;
+}
+.ft_logo .inner_ft_logo > a:hover{
+  width:60px;
+  background:#fff;
+  color:#E60012;
+}
+.ft_logo .inner_ft_logo > a:hover span{
+  opacity:1;
+}
+.ft_logo .inner_ft_logo h3{
+  color:#fff;
+  font-size:20px;
+  line-height:100px;
+  text-align:center;
+  font-weight:bold;
+  transition:all 0.3s ease 0s;
+}
+.ft_logo .inner_ft_logo h3:hover{
+  letter-spacing:2px;
+}
+.ft_contents{
+  width:1000px;
+  margin:0 auto;
+}
+.ft_contents div{
+  float:left;
+  height:60px;
+  width:60px;
+  background:url("../img/bottom.png") no-repeat 0 0px;
+  margin-right:20px;
+}
+.ft_contents:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.ft_contents div.youtube{
+  background-position:0 -160px;
+}
+.ft_contents div.kakao{
+  background-position:-70px -160px;
+}
+.ft_contents div.facebook{
+  background-position:-140px -160px;
+}
+.ft_contents div.mynintendo{
+  width:370px;
+}
+.ft_contents div.amiibo{
+  width:370px;
+  background:url("../img/btn_footer_amiibo.png") no-repeat 0 0;
+  margin-right:0;
+}
+.ft_contents > dl{
+  float:left;
+  width:25%;
+  text-align:center;
+  margin-top:50px;
+  font-size:14px;
+}
+.ft_contents > dl dt{
+  font-weight:bold;
+  position:relative;
+  padding:20px 0;
+}
+.ft_contents > dl dt:before{
+  content:"";
+  display:block;
+  width:20px;
+  height:3px;
+  background:#E60012;
+  position:absolute;
+  left:calc(50% - 10px);
+  top:0;
+}
+.ft_contents > dl dd{
+  margin-bottom:10px;
+}
+.ft_contents > dl dd:before{
+  content:"-";
+  display:inline-block;
+  padding-right:7px;
+  color:#666;
+}
+.ft_contents > dl dd a{
+  color:#666;
+}
+
+.bottom{
+  background:#f5f5f5;
+  margin-top:50px;
+}
+.bottom .inner_bottom{
+  width:1200px;
+  margin:0 auto;
+  padding:40px 0;
+  font-size: 12px;
+}
+.bottom .inner_bottom{
+  line-height:1.6;
+  color:#666;
+}
+.bottom .inner_bottom:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.bottom .inner_bottom a{
+  color:#666;
+}
+.inner_bottom .bt_left{
+  float:left;
+}
+.inner_bottom .bt_right{
+  float:right;
+  text-align:right;
+}
+.inner_bottom .bt_right p:nth-of-type(2){
+  font-size:12px;
+}
