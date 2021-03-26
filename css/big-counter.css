@@ -16,10 +16,11 @@
 	z-index: 2000;
 	top:50%;
 	left:50%;
-	margin-left:-44px;
-	margin-top:5px;
-	height: 5rem;
-	width: 5rem;
+	margin-left:-2.5vw;
+	margin-top:-5vh;
+	width:5vw;
+	height:10vh;
+	/* border:1px solid #fff; */
 	background:none;
 
 	-webkit-transform: translate3d(0, 0, 0) !important;
@@ -29,15 +30,17 @@
 
 .pace .pace-progress:after {
 	display: block;
+	width:5vw;
+	margin:0 auto;
 	position: absolute;
 	top: 0;
-	right: .5rem;
+	left:0;
 	content: attr(data-progress-text);
-	font-family: "Helvetica Neue", sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 100;
 	font-size: 1.1rem;
-	line-height: 1;
-	text-align: right;
+	line-height:10vh;
+	text-align:center;
 	color: rgba(255, 255, 255, 0.9);
 	text-shadow:0 0 5px #fff,
 							0 0 12px #fff,
