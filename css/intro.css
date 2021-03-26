@@ -297,7 +297,7 @@ body{
 }
 
 .circle_wrap{
-  z-index:9999;
+  z-index:999;
   background:#000;
   margin:0;
   width:100%;

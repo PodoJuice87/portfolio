@@ -411,9 +411,11 @@ nav{
 }
 
 .con4 .contact{
-  width:300px;
+  width:400px;
   margin:0 auto;
   margin-top:200px;
+  background:rgba(0,0,0,0.6);
+  padding:10px 30px;
 }
 .con4 .contact li{
   display:flex;
@@ -426,7 +428,7 @@ nav{
 }
 .con4 .contact span{
   display:inline-block;
-  width:200px;
+  width:240px;
   text-align:left;
   font-size:20px;
 }
