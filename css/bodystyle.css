@@ -349,7 +349,7 @@ nav{
 .con3 .slide_item img{
   object-fit:cover;
 }
-.con3 .caption{
+.con3 .modal{
   width:100vw;
   height:100vh;
   position:fixed;
@@ -359,25 +359,70 @@ nav{
   opacity:0;
   transition:all 0.3s ease 0s;
   pointer-events:none;
-  z-index:4;
+  z-index:51;
 }
-.con3 .caption.on{
+.con3 .modal.on{
   opacity:1;
   pointer-events:auto;
   transition:all 0.3s ease 0s;
 }
-.con3 .caption img{
+.con3 .modal > img{
+  display:block;
   position:absolute;
   top:50%;
   left:50%;
   transform:translateX(-50%) translateY(-50%) scale(0.1);
   transition:all 0.3s ease 0s;
 }
-.con3 .caption.on img{
+.con3 .modal.on > img{
   transform:translateX(-50%) translateY(-50%) scale(1);
   transition:all 0.3s ease 0s;
 }
-.con3 .caption .close{
+.con3 .banner .modal.on > img{
+  transform:translateX(-50%) translateY(-80%) scale(1);
+  transition:all 0.3s ease 0s;
+}
+.con3 .popup .modal .desc{
+  width:20vw;
+  position:absolute;
+  top:30vh;
+  left:65vw;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+  border-radius:10px;
+  background:rgba(0,0,0,0.5);
+  padding:20px;
+}
+.con3 .banner .modal .desc{
+  width:20vw;
+  position:absolute;
+  bottom:10vh;
+  left:50%;
+  margin-left:-10vw;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+  border-radius:5px;
+  background:rgba(0,0,0,0.5);
+  padding:20px;
+}
+.con3 .modal .desc dl dt{
+  margin:10px 0;
+  font-family:"Chaney";
+}
+.con3 .modal .desc dl dd{
+  font-size:14px;
+  margin-bottom:15px;
+  text-transform:uppercase;
+}
+.con3 .modal .desc dl dd img{
+  width:1.5vw;
+}
+.con3 .modal .desc h3{
+  font-family:"Chaney";
+  margin-bottom:15px;
+  font-size:30px;
+}
+.con3 .modal .close{
   width:50px;
   height:50px;
   position:absolute;
@@ -385,7 +430,7 @@ nav{
   right:200px;
   cursor:pointer;
 }
-.con3 .caption .close i{
+.con3 .modal .close i{
   font-size:50px;
   line-height:50px;
   text-align:center;
