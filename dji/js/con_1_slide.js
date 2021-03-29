@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $(".slide_1 > li").eq(0).children(".captions").addClass("on");
 
   var slider = $(".slide_nav_list").bxSlider({
     mode:"vertical",
@@ -50,7 +51,7 @@ $(document).ready(function() {
       $(".slide_nav_list > li").eq(newIndex+4).addClass("on_after");
       $(".slide_1 > li").eq(newIndex).children(".captions").addClass("on");
     },
-    
+
     // onSlideAfter:function(){
     //   $(".slide_nav_list > li.on_before").click(function(){
     //     console.log("이전");
