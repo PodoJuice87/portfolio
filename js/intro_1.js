@@ -9,19 +9,19 @@ $(document).ready(function() {
 
 
 
-  const video = document.querySelector('video');
-  video.onloadeddata = (event) => {
-    setTimeout(function(){
-      $(".circle_wrap").addClass("onload");
-    },500);
-  };
+  // const video = document.querySelector('video');
+  // video.onloadeddata = (event) => {
+  //   setTimeout(function(){
+  //     $(".circle_wrap").addClass("onload");
+  //   },500);
+  // };
 
 
 
   // $("body").imagesLoaded( function(){
   //   setTimeout(function(){
   //     $(".circle_wrap").addClass("onload");
-  //   },1000);
+  //   },500);
   // });
 
   // 인트로 스크롤 이벤트
@@ -32,9 +32,10 @@ $(document).ready(function() {
     e.preventDefault();
     var evt = e.originalEvent;
     delta = 0;
-    if(evt.detail==true){
+    if(evt.detail!==0){
       //브라우저가 파폭인경우
       delta = evt.detail * -40;
+      console.log(evt.detail);
     }else{
       //브라우저가 익스, 크롬, 오페라인 경우
       delta = evt.wheelDelta;
@@ -113,8 +114,8 @@ $(document).ready(function() {
 });
 
 
-// $(window).load(function(){
-//   setTimeout(function(){
-//     $(".circle_wrap").addClass("onload");
-//   },1000);
-// });
+window.onload = function(){
+  setTimeout(function(){
+   $(".circle_wrap").addClass("onload");
+  },500);
+}
