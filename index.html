@@ -18,7 +18,7 @@
     <!-- vanilla tilt -->
     <script src="./js/vanilla-tilt.min.js"></script>
     <!-- imagesloaded -->
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
     <!-- pace -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
     <link rel="stylesheet" href="./css/big-counter.css">
@@ -58,6 +58,7 @@
         <span class="mix_r">상상을 현실로 만들어내는</span>
         <span class="mix_g">상상을 현실로 만들어내는</span>
         <span class="mix_b">상상을 현실로 만들어내는</span>
+        <span class="mix_w">상상을 현실로 만들어내는</span>
 
         <!-- <img src="./img/intro1_r.png" alt="상상을 현실로 만들어내는">
         <img src="./img/intro1_g.png" alt="상상을 현실로 만들어내는">
@@ -74,6 +75,7 @@
       </h1>
       <div class="toTop">
         <i class="fas fa-arrow-up"></i>
+        <div class="spincircle"></div>
       </div>
       <div class="scroll_down">
         <i class="fas fa-angle-double-down"></i>
@@ -104,7 +106,7 @@
           <img src="./img/wm_w.png" alt="WM로고">
         </div>
           <p><span>Designer and Publisher from South Korea.</span><br>
-            저는 퍼블리셔가 되기 위해 그린 컴퓨터 아카데미에서 2010.10.27부터 2021.04.02까지 공부하였습니다.<br>UI 디자인과 UX 설계는 물론 디자인 구성요소 설계 및 제작, 응용까지 NCS 교육과정에 맞춰 학습하였고
+            저는 퍼블리셔가 되기 위해 그린 컴퓨터 아카데미에서 2020.10.27부터 2021.04.02까지 공부하였습니다.<br>UI 디자인과 UX 설계는 물론 디자인 구성요소 설계 및 제작, 응용까지 NCS 교육과정에 맞춰 학습하였고
             반응형 웹 프로젝트를 진행하며 HTML, CSS, JavaScript를 다루는 기술도 습득하여 지금의 이 페이지를 직접 제작하기까지 만 5개월이라는 길지 않은 시간이지만 많은 노력을 해 왔습니다.
             항상 가까이 있었지만 어떻게 만들어지고 있는지 궁금하기만 했던 인터넷과 웹에 대한 새로운 지식을 습득하면서 매우 즐거웠고 새롭게 익힌 기술을 적용해 보고 응용해 보면서 보람찬 시간을 보냈습니다.
             월드와이드웹 기술이 태어나고, 이후 지금까지의 변화를 생각해 보면 앞으로의 웹 개발은 지금까지와는 또 다른 새로운 기술의 시대가 기다리고 있을지도 모른다고 생각합니다. 급변하는 시대의 흐름에 맞춰갈 수 있도록 열린 마음가짐으로 항상 새로운 트렌드와 기술의 발전을 탐구하는 퍼블리셔가 되겠습니다.
@@ -191,7 +193,7 @@
             <h3>한국 닌텐도</h3>
             <h3 id="eng_title">Nintendo Korea</h3>
             <h4>주목할 점</h4>
-            <p>접속하자마자 눈에 띄는 메인 배너이미지의 슬라이더를 JQuery를 활용하여 구현하였으며,<br>
+            <p>접속하자마자 눈에 띄는 메인 배너이미지의 슬라이더를 JQuery를 활용하여 구현하였으며,
               상단 주메뉴의 Drop-Down메뉴 스타일은 CSS transition으로 구현하였습니다.<br>
               그리고, 주요 컨텐츠인 제품소개 갤러리의 이미지 Hover효과와 버튼 애니메이션도 CSS로 구현하였습니다.</p>
             <h4>개선사항</h4>
@@ -266,7 +268,7 @@
               은행 예금, 주식, 펀드, 암호화폐등 모든 자산의 관리와 수익률 확인 등의 기능을 한곳에서 할 수 있게 해주는 컨셉<br>
               </p>
             <div class="btn_wrap">
-              <div class="reDesign">제작중 입니다!</div>
+              <div class="reDesign" id="goapp">제작중 입니다!</div>
             </div>
           </div>
           <div class="contents_img">
@@ -307,7 +309,9 @@
               <dt>Font</dt>
               <dd>빙그레체, 완도청정바다체</dd>
               <dt>Color</dt>
-              <dd>#FFF8E3, #FF2B15, #94E3FF</dd>
+              <dd class="color">#FFF8E3</dd>
+              <dd class="color">#FF2B15</dd>
+              <dd class="color">#94E3FF</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -322,7 +326,8 @@
               <dt>Font</dt>
               <dd>메이플스토리</dd>
               <dt>Color</dt>
-              <dd>#AF0004, #006F3B</dd>
+              <dd class="color">#AF0004</dd>
+              <dd class="color">#006F3B</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -337,7 +342,8 @@
               <dt>Font</dt>
               <dd>나눔 스퀘어</dd>
               <dt>Color</dt>
-              <dd>#FFF2DC, #EC0006</dd>
+              <dd class="color">#FFF2DC</dd>
+              <dd class="color">#EC0006</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -352,7 +358,8 @@
               <dt>Font</dt>
               <dd>나눔 스퀘어, 나눔 고딕</dd>
               <dt>Color</dt>
-              <dd>#7442B9, #E2AC40</dd>
+              <dd class="color">#7442B9</dd>
+              <dd class="color">#E2AC40</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -367,7 +374,10 @@
               <dt>Font</dt>
               <dd>완도희망체</dd>
               <dt>Color</dt>
-              <dd>#FFA55C, #97D88B, #798CD1, #D67C87</dd>
+              <dd class="color">#FFA55C</dd>
+              <dd class="color">#97D88B</dd>
+              <dd class="color">#798CD1</dd>
+              <dd class="color">#D67C87</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -382,7 +392,8 @@
               <dt>Font</dt>
               <dd>나눔스퀘어, 나눔고딕</dd>
               <dt>Color</dt>
-              <dd>#F9B0FF, #F9B0FF</dd>
+              <dd class="color">#F9B0FF</dd>
+              <dd class="color">#DE025A</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -397,7 +408,9 @@
               <dt>Font</dt>
               <dd>완도희망체</dd>
               <dt>Color</dt>
-              <dd>#1D0E46, #E3B300, #753200</dd>
+              <dd class="color">#1D0E46</dd>
+              <dd class="color">#E3B300</dd>
+              <dd class="color">#753200</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -421,7 +434,7 @@
               <dt>Font</dt>
               <dd>나눔스퀘어</dd>
               <dt>Color</dt>
-              <dd>#ffffff</dd>
+              <dd class="color">#ffffff</dd>
             </dl>
           </div>
 
@@ -437,7 +450,8 @@
               <dt>Font</dt>
               <dd>나눔스퀘어</dd>
               <dt>Color</dt>
-              <dd>#333333, #ffffff</dd>
+              <dd class="color">#333333</dd>
+              <dd class="color">#ffffff</dd>
             </dl>
           </div>
 
@@ -453,7 +467,9 @@
               <dt>Font</dt>
               <dd>휴먼둥근헤드라인, 나눔스퀘어</dd>
               <dt>Color</dt>
-              <dd>#E10006, #FFFFFF, #7A7A7A</dd>
+              <dd class="color">#E10006</dd>
+              <dd class="color">#FFFFFF</dd>
+              <dd class="color">#7A7A7A</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -468,7 +484,8 @@
               <dt>Font</dt>
               <dd>메이플스토리</dd>
               <dt>Color</dt>
-              <dd>#00411F, #00411F, #FFFFFF</dd>
+              <dd class="color">#00411F</dd>
+              <dd class="color">#FFFFFF</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
@@ -483,7 +500,8 @@
               <dt>Font</dt>
               <dd>Century, 나눔스퀘어</dd>
               <dt>Color</dt>
-              <dd>#393d43, #b1bdd1</dd>
+              <dd class="color">#393d43</dd>
+              <dd class="color">#b1bdd1</dd>
             </dl>
           </div>
           <div class="close"><i class="fas fa-times"></i></div>
